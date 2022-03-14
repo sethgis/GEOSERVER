@@ -25,6 +25,7 @@ services:
       image: kartoza/geoserver:${GS_VERSION}
       volumes:
         - geoserver-data:/opt/geoserver/data_dir
+        - E:\1.Geoserver\docker-geoserver\build_data\raster_WEM
       ports:
         - ${GEOSERVER_PORT}:8080
       restart: on-failure
