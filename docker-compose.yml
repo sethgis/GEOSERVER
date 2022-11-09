@@ -38,8 +38,8 @@ services:
       depends_on:
         db:
           condition: service_healthy
-      healthcheck:
-        test: curl --fail -s http://localhost:8080/ || exit 1
-        interval: 1m30s
-        timeout: 10s
-        retries: 3
+#       healthcheck:
+#         test: curl --fail -s http://localhost:8080/ || exit 1
+#         interval: 1m30s
+#         timeout: 10s
+#         retries: 3
